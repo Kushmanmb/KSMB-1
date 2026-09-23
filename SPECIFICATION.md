@@ -74,3 +74,23 @@ polynomials in R_q.
 
 The exact values of q and n will be selected after security
 and performance analysis.
+## Initial Parameter Strategy
+
+KSMB-1 will not claim security based solely on parameter size.
+
+Initial parameters will be selected using:
+
+1. Published lattice-cryptanalysis methods
+2. Estimated classical security
+3. Estimated quantum security
+4. Signature size
+5. Public-key size
+6. Signing performance
+7. Verification performance
+8. Resistance to known lattice attacks
+
+Parameters will be versioned so that changes can be tracked
+and independently reproduced.
+
+No parameter set will be considered production-ready until
+it has undergone independent cryptographic analysis.
