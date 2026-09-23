@@ -117,3 +117,27 @@ system or an approved cryptographic library.
 
 The exact distributions, dimensions, modulus, and encoding
 rules will be specified after parameter selection.
+## Signing
+
+KSMB-1 signing accepts:
+
+- A private key
+- A message
+
+The signing procedure will:
+
+1. Hash the message using a cryptographic hash function.
+2. Derive deterministic signing randomness from the private
+   key and message.
+3. Generate an ephemeral masking value.
+4. Compute the signature response using the private key.
+5. Produce a signature containing all values required for
+   verification.
+6. Encode the signature using a canonical format.
+
+The signing procedure must not reuse secret ephemeral values
+between independent signatures.
+
+The exact mathematical equations, rejection conditions,
+parameter values, and encoding rules will be defined after
+the parameter-selection stage.
