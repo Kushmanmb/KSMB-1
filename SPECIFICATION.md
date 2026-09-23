@@ -167,3 +167,25 @@ observable error messages or timing behavior.
 The exact verification equations and rejection conditions
 will be defined after the mathematical parameter set is
 selected.
+## Research Baseline
+
+KSMB-1 will be developed as an experimental research
+construction.
+
+Before defining novel mathematical equations, the project
+will study established post-quantum signature constructions,
+including lattice-based schemes standardized or evaluated by
+NIST.
+
+KSMB-1 will clearly distinguish:
+
+- Established cryptographic primitives
+- Experimental modifications
+- New mathematical constructions
+- Security assumptions
+- Claims supported by analysis
+- Claims that remain unverified
+
+No claim that KSMB-1 is stronger than Bitcoin, existing
+standards, or established cryptographic algorithms will be
+made without supporting cryptanalysis.
