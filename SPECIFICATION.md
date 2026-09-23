@@ -35,3 +35,22 @@ This is a design target, not a security claim.
 ## Version
 
 KSMB-1 Version 0.1
+## Mathematical Foundation
+
+KSMB-1 will investigate a lattice-based digital signature
+construction as its primary mathematical foundation.
+
+The construction will use:
+
+- Integer matrices
+- Vectors over a defined modular ring
+- Cryptographic hash functions
+- A deterministic key-generation procedure
+- A signing procedure
+- A verification procedure
+
+The exact mathematical parameters are intentionally left
+undefined until the security analysis and parameter-selection
+process is completed.
+
+No security level is claimed at this stage.
