@@ -189,3 +189,23 @@ KSMB-1 will clearly distinguish:
 No claim that KSMB-1 is stronger than Bitcoin, existing
 standards, or established cryptographic algorithms will be
 made without supporting cryptanalysis.
+## Cryptographic Baseline
+
+KSMB-1 will use ML-DSA as a reference baseline for
+post-quantum digital signatures.
+
+ML-DSA is an established lattice-based signature standard.
+
+KSMB-1 will be evaluated against the baseline using:
+
+- Security assumptions
+- Public-key size
+- Private-key size
+- Signature size
+- Key-generation performance
+- Signing performance
+- Verification performance
+- Known cryptanalytic attacks
+
+KSMB-1 is an independent experimental project and does not
+claim compatibility with ML-DSA.
