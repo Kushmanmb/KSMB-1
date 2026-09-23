@@ -94,3 +94,26 @@ and independently reproduced.
 
 No parameter set will be considered production-ready until
 it has undergone independent cryptographic analysis.
+## Key Generation
+
+KSMB-1 key generation will produce a private key and a
+corresponding public key.
+
+The key-generation process will:
+
+1. Obtain cryptographically secure random seed material.
+2. Expand the seed using a cryptographic pseudorandom
+   function.
+3. Generate the secret polynomial/vector components.
+4. Generate the public matrix using a deterministic
+   generation procedure.
+5. Compute the public key from the generated matrix and
+   secret components.
+6. Output the private and public keys.
+
+The random seed must be generated using a cryptographically
+secure random-number generator provided by the operating
+system or an approved cryptographic library.
+
+The exact distributions, dimensions, modulus, and encoding
+rules will be specified after parameter selection.
