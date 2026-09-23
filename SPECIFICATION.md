@@ -54,3 +54,23 @@ undefined until the security analysis and parameter-selection
 process is completed.
 
 No security level is claimed at this stage.
+## Core Mathematical Objects
+
+KSMB-1 will operate over a modular integer ring.
+
+Let:
+
+R_q = Z_q[x] / (x^n + 1)
+
+where:
+
+- q is a prime modulus
+- n is a power of two
+- Z_q represents integers modulo q
+- x is a polynomial variable
+
+KSMB-1 will use vectors and matrices whose elements are
+polynomials in R_q.
+
+The exact values of q and n will be selected after security
+and performance analysis.
