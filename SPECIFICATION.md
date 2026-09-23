@@ -141,3 +141,29 @@ between independent signatures.
 The exact mathematical equations, rejection conditions,
 parameter values, and encoding rules will be defined after
 the parameter-selection stage.
+## Verification
+
+KSMB-1 verification accepts:
+
+- A public key
+- A message
+- A KSMB-1 signature
+
+The verification procedure will:
+
+1. Decode the public key and signature.
+2. Validate their canonical encoding.
+3. Hash the message.
+4. Reconstruct the values required by the verification
+   equation.
+5. Check that the reconstructed values satisfy the
+   KSMB-1 verification relation.
+6. Reject malformed or invalid signatures.
+7. Return either VALID or INVALID.
+
+Verification must not reveal secret-key information through
+observable error messages or timing behavior.
+
+The exact verification equations and rejection conditions
+will be defined after the mathematical parameter set is
+selected.
